@@ -1,0 +1,65 @@
+[
+    {
+      "id":1 ,
+       "name":"Bmw1220sc",
+      "img" :"https://i.ibb.co/60M4Gpy/bike1.png",
+       "discription":"This bike Not for every one",
+       "quantity" : "4.9/5"
+    
+    
+    },
+    {
+      "id":2 ,
+       "name":"Suzuki",
+       "img" :"https://i.ibb.co/60M4Gpy/bike1.png",
+     "discription":"This bike is power full machine",
+       "quantity" :12
+    
+    
+    },
+    {
+      "id":3,
+       "name":"alif",
+       "img" :"https://i.ibb.co/60M4Gpy/bike1.png",
+     "discription":"cool",
+       "qunatity" : 5
+    
+    
+    },
+    {
+      "id":4,
+       "name":"pulser Ns160",
+       "img" :"https://i.ibb.co/60M4Gpy/bike1.png",
+       "discription":"This is amazing bike. This bike control is very good",
+       "quantity" : 12
+    
+    
+    },
+    {
+      "id":5,
+       "name":"R1M",
+       "img" :"https://i.ibb.co/60M4Gpy/bike1.png",
+       "discription":" The is most popular in Bangladesh",
+       "quantity" : 12
+    
+    
+    },
+    {
+      "id":6,
+       "name":"Apache 160",
+       "img" :"https://i.ibb.co/60M4Gpy/bike1.png",
+       "discription":" This bike is best selles in bangladesh",
+       "Rating" : 4
+    
+    
+    },
+    {
+      "id":7,
+       "name":"hero alom",
+       "discription":" nice look",
+       "qunatity":9
+    
+    
+    }
+    
+    ]
