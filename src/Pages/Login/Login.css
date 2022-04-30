@@ -1,0 +1,13 @@
+.login{
+    min-height: 80vh;
+}
+
+.From{
+    border-radius: 5px;
+    box-shadow: 3px 1px 28px #a0ffdf;
+    background-color: #20c997;
+    
+}
+.Button{
+  background-color: white ;
+}

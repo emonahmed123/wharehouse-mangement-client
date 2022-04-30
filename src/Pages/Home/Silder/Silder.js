@@ -24,7 +24,7 @@ const Silder = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Second slide&bg=282c34"
+                    src="https://i.ibb.co/60M4Gpy/bike1.png"
                     alt="Second slide"
                   />
           
@@ -36,7 +36,7 @@ const Silder = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-100"
-                    src="holder.js/800x400?text=Third slide&bg=20232a"
+                    src="https://i.ibb.co/60M4Gpy/bike1.png"
                     alt="Third slide"
                   />
           
