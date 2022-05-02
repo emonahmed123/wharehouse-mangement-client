@@ -5,7 +5,7 @@ const Blogs = () => {
         <div>
          
    
-              <div className='ms-2'>
+              <div className='ms-3'>
                <h3>Differnt btween JavaScript and nodejs </h3>
                    <ul>
                    1.	
@@ -17,9 +17,10 @@ const Blogs = () => {
               </div>
 
 
-              <div>
+              <div className='ms-3'>
+            <h3>  SQL    vs 	NoSQL</h3>
             <ul>
-            SQL    vs       	NoSQL
+        
 <li>RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)=	Non-relational or distributed database system. </li> 
 <li> These databases have fixed or static or predefined schema=	They have dynamic schema</li>
 <li>These databases are not suited for hierarchical data storage.	These databases are best suited for hierarchical data storage.</li> 
@@ -27,11 +28,18 @@ const Blogs = () => {
 <li> Vertically Scalable	Horizontally scalable</li> 
 <li> Follows ACID property	Follows CAP(consistency, availability, partition tolerance)</li>
 
+ </ul>
+</div>
+                    <div>
+                        <h4>what is jwt</h4>
+                 <p>  Jwt , or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. <br/>
+                   Each JWT contains encoded JSON objects, including a set of claims. <br/>
+                   JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
 
-            </ul>
 
+    </p>
+                    </div>
 
-              </div>
         </div>
     );
 };
