@@ -4,7 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import {  Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init'
-
+import  Socailogin from '../SocailLogin/Socailogin'
 const Singup = () => {
     const [
         createUserWithEmailAndPassword,
@@ -61,7 +61,8 @@ const Singup = () => {
           </Button>
           <p>Already have an account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={NavigateLogin}>Please Login</Link> </p>
         </Form>
-
+ 
+       <Socailogin></Socailogin>
 </div>
 
      )
