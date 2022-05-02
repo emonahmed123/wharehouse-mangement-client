@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import useBike from '../../../hooks/useBike';
 import './InventorieUpdate.css'
 const InventorieUpdate = () => {
@@ -21,6 +21,11 @@ const InventorieUpdate = () => {
 
 
                </div>
+
+   <div>
+        <Link to='/additems' className="btn btn-primary"   >Add itmes</Link>
+           <Link to='/mangeitem' className='btn btn-danger'> Mange Inventories </Link>
+           </div>
         </div>
     );
 };

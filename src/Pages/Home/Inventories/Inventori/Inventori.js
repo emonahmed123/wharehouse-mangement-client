@@ -4,7 +4,7 @@ import './Inventori.css'
 
 const Inventori = ({bike}) => {
    
-    const{name,img,discription,quantity,_id}= bike
+    const{name,img,discription,quantity,_id,supliername}= bike
     
     const navigate =useNavigate();
     const NavigaetUpadate =(_id)=>{
@@ -20,6 +20,7 @@ const Inventori = ({bike}) => {
                 <h5 className="card-title">{name}</h5>
                 <p className="card-text">Qunatity:{quantity}</p>
                 <p className="card-text">{discription}</p>
+                <p className="card-text">Supliername:{supliername}</p>
                 < button onClick={()=>NavigaetUpadate (_id)}  className="btn btn-primary"> U  p  d  a  t  e </button>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-
+import './Silder.css'
 const Silder = () => {
     const [index, setIndex] = useState(0);
           
@@ -11,9 +11,9 @@ const Silder = () => {
                <>
               <Carousel activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="https://i.ibb.co/60M4Gpy/bike1.png"
+                  <img  
+                    className="d-block w-100 jpg  "
+                    src="https://i.ibb.co/5M9yyJW/motorcycle-with-helmet-1.png"
                     alt="First slide"
                   />
                   <Carousel.Caption>
@@ -23,8 +23,8 @@ const Silder = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
-                    src="https://i.ibb.co/60M4Gpy/bike1.png"
+                    className="d-block w-100 jpg "
+                     src="https://i.ibb.co/FYymF21/2016-MV-Agusta-Brutale-1090-Streetbike-in-black-o.png"
                     alt="Second slide"
                   />
           
@@ -35,8 +35,8 @@ const Silder = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
-                    className="d-block w-100"
-                    src="https://i.ibb.co/60M4Gpy/bike1.png"
+                    className="d-block w-100 jpg "
+                    src="https://i.ibb.co/JkPKsj4/2019-bmw-r-1250-gs-everything-we-know.jpg"
                     alt="Third slide"
                   />
           
