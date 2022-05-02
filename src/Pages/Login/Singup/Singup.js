@@ -1,7 +1,7 @@
 import { async } from '@firebase/util';
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from'react-firebase-hooks/auth';
 import {  Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init'
 import  Socailogin from '../SocailLogin/Socailogin'
@@ -13,7 +13,7 @@ const Singup = () => {
         error,
       ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification : true});
     
-  const navigate =useNavigate()
+     const navigate =useNavigate()
       
  const NavigateLogin = (event)=>{
    navigate('/login')
@@ -21,18 +21,18 @@ const Singup = () => {
  if(user){
      navigate('/home')
  }
- 
+    
  
       const  nameRef =useRef(' ')
     const emailRef = useRef(' ')
     const passwordRef = useRef(' ')
   
-    const handleSigup = event => {
+    const handleSigup = async    event => {
         event.preventDefault()
         const email = emailRef.current.value;
         const password = passwordRef.current.value
         console.log(email, password)
-        createUserWithEmailAndPassword(email,password);
+      await  createUserWithEmailAndPassword(email,password);
       }
     
   

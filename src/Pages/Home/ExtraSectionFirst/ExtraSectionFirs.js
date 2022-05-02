@@ -20,7 +20,7 @@ const ExtraSectionFirs = () => {
             </div>
 
 
-
+            {/* https://i.ibb.co/gT8zqHd/black-motorcycle-white.png */}
           </div>
 
         </div>

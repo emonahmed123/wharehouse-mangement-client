@@ -1,16 +1,21 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate ,useLocation} from 'react-router-dom';
 import auth from '../../firebase.init'
 import Loding from '../Shared/Loding/Loding';
 import './Login.css'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
+
+
 const Login = () => {
   const emailRef = useRef(' ')
   const passwordRef = useRef(' ')
   const navigate = useNavigate()
+  const location = useLocation()
+  let from = location.state?.from?.pathname ||   "/";
+  let errorElement
   const [
     signInWithEmailAndPassword,
     user,
@@ -30,9 +35,9 @@ const Login = () => {
   }
 
   if (user) {
-    navigate('/home')
+    navigate(from,{ replace: true})
   }
-  let errorElement
+
   if (error) {
     errorElement = <p className='text-danger'>Error: {error?.message} </p>
 

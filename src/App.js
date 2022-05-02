@@ -3,9 +3,11 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import InventorieUpdate from './Pages/Home/InventorieUpdate/InventorieUpdate';
 import Login from './Pages/Login/Login';
+import RequreAuth from './Pages/Login/RequreAuth/RequerAuth';
 import Singup from './Pages/Login/Singup/Singup';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header'
+import NotFound from './Pages/Shared/NotFound/NotFound'
 function App() {
   return (
     <div className="App">
@@ -16,8 +18,13 @@ function App() {
                <Route  path='/home' element={<Home></Home>}></Route> 
                <Route  path='/login' element={<Login></Login>}></Route> 
                  <Route path='/sigup' element={<Singup></Singup>}></Route>
-            <Route path='/inventorieupdate/:bikeId' element={<InventorieUpdate/>}></Route>
-      
+            <Route path='/inventorieupdate/:bikeId' element=  {
+          
+                      <RequreAuth>
+                                  <InventorieUpdate/>
+                        </RequreAuth>      }>
+            </Route>
+               <Route path='*' element={<NotFound/>}></Route>
       </Routes>
 
               <Footer></Footer>
