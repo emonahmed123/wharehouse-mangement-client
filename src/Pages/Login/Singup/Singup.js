@@ -35,10 +35,12 @@ const Singup = () => {
         createUserWithEmailAndPassword(email,password);
       }
     
-    
+  
     
     return (
-        <div className='container From w-50 mx-auto login mt-5'>
+      <div className='login '>
+
+   <div className='container From w-50 mx-auto pb-2 mt-5'>
         <h1 className=' text-center mt-5' > SingUp </h1>
   
         <Form onSubmit={handleSigup}>
@@ -64,6 +66,10 @@ const Singup = () => {
  
        <Socailogin></Socailogin>
 </div>
+
+
+
+      </div>
 
      )
 };

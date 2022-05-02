@@ -1,0 +1,19 @@
+.img{
+     width: 350px;
+     background-color: #0000FF;
+     transition: width 2s, height 2s, background-color 2s, transform 2s 
+}
+ .img:hover{
+    background-color: #FFCCCC;
+    box-shadow: -2px 3px 10px 3px palevioletred;
+    transform: rotateX(20deg)
+}
+
+.bestbike {
+
+    border: 1px solid slateblue;
+    padding-top: 53px;
+    border-radius: 20px;
+    box-shadow: -2px 3px 10px 3px palevioletred;
+    margin-top: 34px;
+}

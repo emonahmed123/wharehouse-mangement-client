@@ -1,13 +1,14 @@
 import React from 'react';
+import ExtraSectionFirs from './ExtraSectionFirst/ExtraSectionFirs';
 import Inventories from './Inventories/Inventories';
 import Silder from './Silder/Silder';
 
 const Home = () => {
     return (
         <div>
-        <h1>  this is home</h1>   
          <Silder></Silder>
         <Inventories></Inventories>
+         <ExtraSectionFirs></ExtraSectionFirs> 
         </div>
     );
 };
