@@ -30,7 +30,7 @@ const Blogs = () => {
 
  </ul>
 </div>
-                    <div>
+                    <div className='ms-3'>
                         <h4>what is jwt</h4>
                  <p>  Jwt , or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. <br/>
                    Each JWT contains encoded JSON objects, including a set of claims. <br/>
