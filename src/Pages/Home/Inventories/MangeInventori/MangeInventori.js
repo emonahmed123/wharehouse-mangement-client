@@ -8,7 +8,7 @@ const MangeInventori = () => {
         const proceed = window .confirm('Are you sure')
           
         if(proceed){
-            const url = `http://localhost:5000/bike/${id}`
+            const url = `https://intense-citadel-51923.herokuapp.com/bike/${id}`
             
             fetch(url,{
                 method:'DELETE'

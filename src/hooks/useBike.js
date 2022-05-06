@@ -4,7 +4,7 @@ const useBike = bikeId=>{
  const [bike,setBike]= useState({ })
 
  useEffect(()=>{
-     const url =`http://localhost:5000/bike/${bikeId}`
+     const url =`https://intense-citadel-51923.herokuapp.com/bike/${bikeId}`
      fetch(url)
      .then(res=>res.json())
      .then(data=>setBike(data))

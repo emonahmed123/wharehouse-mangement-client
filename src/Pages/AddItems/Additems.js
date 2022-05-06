@@ -3,7 +3,7 @@ import React from 'react';
 const Additems = () => {
     const { register, handleSubmit } =  useForm()
     const onSubmit = data => {console.log(data);
-    const url =`http://localhost:5000/bike`
+    const url =`https://intense-citadel-51923.herokuapp.com/bike`
 
     fetch(url,{
  method:'POST',
