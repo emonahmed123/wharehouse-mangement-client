@@ -9,7 +9,7 @@ const InventorieUpdate = () =>{
        const {name,quantity,} =bike;
      const handeldevliverd =(updatedQuantity)=> {
           const newQuantity =updatedQuantity-1;
-          const url =`http://localhost:5000/bike/${bikeId}`
+          const url =`https://intense-citadel-51923.herokuapp.com/bike/${bikeId}`
           fetch(url, {
             method: 'PUT',
             headers: {
@@ -20,7 +20,7 @@ const InventorieUpdate = () =>{
           .then(data=>{
               console.log(data)
               if (data.modifiedCount > 0) {
-                fetch(`http://localhost:5000/bike/${bikeId}`)
+                fetch(`https://intense-citadel-51923.herokuapp.com/bike/${bikeId}`)
                     .then(res => res.json())
                     .then(data => setBike(data))
               
@@ -38,7 +38,7 @@ const InventorieUpdate = () =>{
            const newQuantity = parseInt(inuputQuanty)+quantity;
 
             
-            const url =`http://localhost:5000/bike/${bikeId}`
+            const url =`https://intense-citadel-51923.herokuapp.com/bike/${bikeId}`
             fetch(url, {
               method: 'PUT',
               headers: {
