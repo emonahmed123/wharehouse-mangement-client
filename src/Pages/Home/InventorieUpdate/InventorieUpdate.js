@@ -49,7 +49,7 @@ const InventorieUpdate = () =>{
             .then(data=>{
                 console.log(data)
                 if (data.modifiedCount > 0) {
-                  fetch(`http://localhost:5000/bike/${bikeId}`)
+                  fetch(`https://intense-citadel-51923.herokuapp.com/bike/${bikeId}`)
                       .then(res => res.json())
                       .then(data => setBike(data))
                 
